@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seja Diferente dos Iguais</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #222;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .container {
+      flex: 1;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      margin: 20px 0;
+    }
+    .links {
+      display: grid;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    a {
+      display: block;
+      padding: 15px;
+      background: #0066cc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    a:hover {
+      background: #004999;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MELHOR APLICATIVO COM MELHORES MOTORISTAS PARA OS MELHORES PASSAGEIROS</h1>
+
+    <h2>APP MOTORISTA</h2>
+    <div class="links">
+      <a href="https://play.google.com/store/search?q=liga%20coop%20MOTORISTA&c=apps" target="_blank">Android</a>
+    </div>
+
+    <h2>WhatsApp de Acesso ao Credenciamento e Treinamento COOMACE</h2>
+    <div class="links">
+      <a href="https://chat.whatsapp.com/LKIJeGBFym2BduTIvjl48P" target="_blank">Entrar no Grupo</a>
+    </div>
+
+    <h2>APP PASSAGEIRO</h2>
+    <div class="links">
+      <a href="https://apps.apple.com/br/app/liga-coop-passageiro/id1637724825?irgwc=1&aosid=p239&cid=aos-br-aff-ir-1373224&irchannel=13653&irpid=1373224&clickid=XlLRmDVkhxyKTEoy-6S3vTkgUks04F3pCVqjx40&ircid=7638" target="_blank">iPhone</a>
+      <a href="https://play.google.com/store/search?q=liga+coop+passageiro&c=apps&id=br.com.livup.ecommerce&referrer=adjust_reftag%253DcwuGyCelV1sBZ%2526utm_source%253DDGMax%252BMobile%2526utm_campaign%253Ddgmax%2526utm_content%253Dcpc" target="_blank">Android</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Todos os direitos reservados para <strong>COOMACE</strong></p>
+    <p>Criado por <a href="https://ejo7a.com" target="_blank" style="color:#4da6ff;">EJ07A.com</a></p>
+    <p>Contador de acessos: <span id="visitas">0</span></p>
+  </footer>
+
+  <script>
+    // Contador de acessos usando countapi.xyz (gratuito, sem anúncios)
+    fetch('https://api.countapi.xyz/hit/sejadiferente/coomace')
+      .then(res => res.json())
+      .then(res => {
+        document.getElementById('visitas').innerText = res.value;
+      });
+  </script>
+</body>
+</html>
